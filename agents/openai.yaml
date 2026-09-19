@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研区位图"
+  short_description: "面向地理与城乡规划论文，使用公开或自有数据制作可复现的研究区区位图"
+  default_prompt: "请使用 $research-location-map，基于我提供的研究区与数据制作论文区位图，先核对坐标、数据年份和当前执行权限。"
