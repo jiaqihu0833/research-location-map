@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "study_area": {
+    "name": null,
+    "boundary_layer": "study",
+    "expected_bbox_wgs84": null
+  },
+  "data_mode": "user",
+  "map_type": "administrative",
+  "data_year": null,
+  "language": "zh",
+  "layout": {
+    "width_mm": 180,
+    "height_mm": 135,
+    "dpi": 300,
+    "font_family": null,
+    "font_size_pt": 8
+  },
+  "outputs": {
+    "directory": "output/run-001",
+    "basename": "location-map",
+    "formats": ["png", "svg", "pdf"]
+  },
+  "layers": [
+    {
+      "id": "context",
+      "path": null,
+      "kind": "vector",
+      "role": "context",
+      "layer": null,
+      "source_crs": null,
+      "coordinate_system": null,
+      "label_field": null,
+      "style": {"facecolor": "#f0f0ed", "edgecolor": "#7b7b76", "linewidth": 0.45, "alpha": 1.0},
+      "provenance": {"source": null, "version": "unknown", "year": null, "license": "unknown", "spatial_resolution": "unknown", "acquired_at": null}
+    },
+    {
+      "id": "study",
+      "path": null,
+      "kind": "vector",
+      "role": "study_area",
+      "layer": null,
+      "source_crs": null,
+      "coordinate_system": null,
+      "label_field": null,
+      "style": {"facecolor": "none", "edgecolor": "#b34436", "linewidth": 1.1, "alpha": 1.0},
+      "provenance": {"source": null, "version": "unknown", "year": null, "license": "unknown", "spatial_resolution": "unknown", "acquired_at": null}
+    }
+  ],
+  "panels": [
+    {"id": "locator", "title": "(a) 区域位置", "rect": [0.05, 0.49, 0.27, 0.42], "crs": null, "extent_wgs84": null, "layers": ["context", "study"], "locator_for": ["main"], "scale_bar_km": null, "north_arrow": false},
+    {"id": "main", "title": "(b) 研究区", "rect": [0.38, 0.25, 0.57, 0.66], "crs": null, "extent_wgs84": null, "layers": ["context", "study"], "locator_for": [], "scale_bar_km": null, "north_arrow": true}
+  ],
+  "caption": null
+}
